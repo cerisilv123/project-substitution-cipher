@@ -5,8 +5,8 @@ using namespace std;
 
 int main () {
     
-    string alphabet {"abcdefghijklmnopqrstuvwxyz"};
-    string key {"qwertyuiopasdfghjklzxcvbnm"};
+    string alphabet {"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"};
+    string key {"QWERTYUIOPASDFGHJKLZXCVBNMqwertyuiopasdfghjklzxcvbnm"};
     
     cout << "Enter a secret message: ";
     string secret_msg {};
