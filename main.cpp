@@ -18,18 +18,18 @@ int main () {
     
     // =========== Encryption =========== // 
     
-    for (auto letter: secret_msg) { 
-        if (isalpha(letter)) {
-              position = alphabet.find(letter); 
+    for (auto j: secret_msg) { 
+        if (isalpha(j)) {
+              position = alphabet.find(j); 
               if (position != string::npos) { // npos = no position (not in the string) 
                   encrypted_message.push_back(key.at(position)); 
               }
               else {
-                  encrypted_message.push_back(letter); // adding alphabet not in list
+                  encrypted_message.push_back(j); // adding alphabet not in list
               }
         }
         else {
-           encrypted_message.push_back(letter); // Pushing back whitespace
+           encrypted_message.push_back(j); // Pushing back whitespace
         }
     }  
     
